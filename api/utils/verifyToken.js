@@ -16,7 +16,7 @@ export const verifyUser = (req, res, next) => {
       return next(createError(403, "You are not authorized!"));
     }
   });
-};
+}
 
 export const verifyAdmin = (req, res, next) => {
   const token = req.cookies.access_token;
@@ -33,6 +33,6 @@ export const verifyAdmin = (req, res, next) => {
       return next(createError(403, "You are not authorized!"));
     }
   });
-};
+}
 
 
